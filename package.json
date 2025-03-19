@@ -1,0 +1,29 @@
+{
+  "name": "conversation-nlp",
+  "version": "1.0.0",
+  "description": "API to conversation using NLP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "tsx watch --env-file=.env ./src/server.ts",
+    "build": "tsc -b"
+  },
+  "keywords": [
+    "nlp",
+    "ai",
+    "chat",
+    "conversation"
+  ],
+  "author": "Mayderson Mello",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "tsc": "^2.0.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "fastify": "^5.2.1"
+  }
+}

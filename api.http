@@ -1,0 +1,47 @@
+### Base URL
+@baseUrl = http://localhost:3001
+
+### PIX
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "userId": "12345",
+  "message": "Quero fazer um PIX"
+}
+
+### Responder com mais informações sobre o PIX
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "userId": "12345",
+  "message": "Para Mayderson, no valor de 100 reais"
+}
+
+### BANK_SLIP
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "userId": "12345",
+  "message": "Preciso gerar um boleto"
+}
+
+### Responder com mais informações sobre o BANK_SLIP
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "userId": "12345",
+  "message": "O valor será de 130,10"
+}
+
+### BALANCE
+POST {{baseUrl}}/message
+Content-Type: application/json
+
+{
+  "userId": "12345",
+  "message": "Eu tenho muito dinheiro?"
+}
